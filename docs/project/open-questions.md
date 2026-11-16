@@ -28,7 +28,7 @@ names what it blocks, so the documents can be finished field by field.
 | --- | --- | --- | --- | --- | --- |
 | O1 | Apply as an Incubator project, and with what scope (Android only, or Android + iOS roadmap)? | Determines the application content and the page classification | Submission | Project leader | Open |
 | O2 | Does the repository stay personal or move to the OWASP GitHub organisation? | Affects links, CI, issue history and the project page | Submission, all docs links | Project leader | Open |
-| O3 | Who are the two co-leaders — names, GitHub handles, affiliations, availability? | The page requires named leaders; bus factor needs a deputy per role | `leaders.md`, submission | Project leader | Open — two roles reserved |
+| O3 | Confirm GitHub handles, affiliations and availability for the two co-leaders. | The page requires named leaders; bus factor needs a deputy per role | Submission | Project leader | Open — names confirmed; handles and affiliations pending |
 | O4 | What is the public contact route — OWASP Slack channel, GitHub Discussions or a mailing list? | Reviewers and users need one durable channel | Submission, `resources.md` | Project leader | Open |
 | O5 | Who receives security reports, and what is the disclosure window? | An offline app still needs a route for tampering or content-safety reports | `resources.md`, release | Engineering co-leader | Open |
 

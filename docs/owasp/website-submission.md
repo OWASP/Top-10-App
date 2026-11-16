@@ -161,8 +161,8 @@ also carry classification and contact details; proposed values:
 | --- | --- |
 | Project type | Tool / code, with documentation |
 | Classification | Incubator (proposed) |
-| Project leader | `[Name]` — see [`../project/leaders.md`](../project/leaders.md) |
-| Co-leaders | Two roles reserved: content/SME coordination and engineering/release |
+| Project leader | Bo Kaung |
+| Co-leaders | Maryam Tehrani (content and review); Marc Daniel Sevigny (engineering and release) |
 | Licence (code) | `[TBC]` — currently GPL-3.0; under review against OWASP expectations |
 | Licence (content) | CC BY-SA 4.0 for all six editions; attribution carried in the bundle |
 | Repository | `[TBC]` — currently a private working repository |

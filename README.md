@@ -63,9 +63,6 @@ dark-theme screenshots are in [`docs/stakeholders/screenshots/`](docs/stakeholde
 | Co-leader — content and review | Maryam Tehrani |
 | Co-leader — engineering and release | Marc Daniel Sevigny |
 
-Responsibilities, decision rules and the pre-publication checklist are in
-[`docs/project/leaders.md`](docs/project/leaders.md).
-
 ## Features
 
 - **Learn** — all 60 risks with search, family filters and read state.
@@ -124,7 +121,6 @@ deliberately without one; see [`docs/project/resources.md`](docs/project/resourc
 | --- | --- |
 | [`docs/project/overview.md`](docs/project/overview.md) | Problem, scope, design principles, platforms |
 | [`docs/project/status.md`](docs/project/status.md) | Status, versions, licences, phases and deliverables |
-| [`docs/project/leaders.md`](docs/project/leaders.md) | Leadership roles and responsibilities |
 | [`docs/project/metrics.md`](docs/project/metrics.md) | Success metrics measurable without telemetry |
 | [`docs/project/resources.md`](docs/project/resources.md) | Install, usage, troubleshooting, contributing |
 | [`docs/project/open-questions.md`](docs/project/open-questions.md) | Unresolved decisions with owners |

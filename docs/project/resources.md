@@ -129,7 +129,6 @@ published when the repository's home and licence are settled. Until then:
 | Document | Purpose |
 | --- | --- |
 | [`overview.md`](overview.md) | Problem, scope, design principles, platforms |
-| [`leaders.md`](leaders.md) | Leadership roles and responsibilities |
 | [`status.md`](status.md) | Status, versions, licences, phases and deliverables |
 | [`metrics.md`](metrics.md) | How success is measured without telemetry |
 | [`open-questions.md`](open-questions.md) | Unresolved decisions with owners |
