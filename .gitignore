@@ -1,0 +1,40 @@
+
+# Secrets and signing material
+.env
+.env.*
+*.pem
+*.p12
+*.jks
+*.keystore
+android/key.properties
+*.mobileprovision
+
+# FVM Version Cache
+.fvm/
+
+# Flutter/Dart build artifacts
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+**/doc/api/
+app.*.symbols
+app.*.map.json
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Local research notes (not part of the app or docs)
+/owasp-top-10-all.md
+
+# IDE and OS metadata
+.idea/
+*.iml
+*.ipr
+*.iws
+.directory
+.DS_Store
+*.swp
+*~
