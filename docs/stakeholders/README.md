@@ -1,10 +1,9 @@
 # Stakeholder pack
 
-Materials for briefing stakeholders on the Top 10 Pocket Guide.
+Materials for briefing stakeholders on the OWASP Top 10 Pocket Guide.
 
 > **Status:** working draft. The content has not been reviewed by subject-matter
-> experts and the app is not ready for public release. This is an independent
-> project, not an OWASP publication.
+> experts and the app is not ready for public release. This is an OWASP project.
 
 ## What is here
 
@@ -20,8 +19,8 @@ Materials for briefing stakeholders on the Top 10 Pocket Guide.
 
 1. Read the summary first; it is written to stand alone.
 2. Open the deck and check the speaker notes in Presenter View.
-3. Keep the disclaimer in the opening and the close: working draft, independent
-   project, no OWASP endorsement.
+3. Keep the status in the opening and the close: working draft, content awaiting
+   SME review.
 4. Leave 10 minutes for the five decisions on slide 15.
 
 The deck deliberately shows the in-app draft banner. Do not crop it out: it is

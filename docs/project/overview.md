@@ -3,8 +3,8 @@
 **OWASP Top 10 Pocket Guide** is an offline study guide for six OWASP Top 10 editions in
 one mobile app.
 
-> **Project status:** working draft. This is not yet an official OWASP project and the
-> name is provisional. See [`open-questions.md`](open-questions.md).
+> **Project status:** working draft. This is an OWASP project; the content is not yet
+> reviewed. See [`open-questions.md`](open-questions.md).
 
 ## The problem
 

@@ -3,11 +3,11 @@
 **Prepared:** 23 October 2026
 **Purpose:** field-by-field content for the OWASP Foundation project page, following the
 template in `~/projects/OWASP/Top10Plan/Requirements-by-OWSP.md`.
-**Status of the project:** draft, not yet accepted as an OWASP project.
+**Status of the project:** draft, OWASP project.
 
 > **Submission note — read before publishing.** This is proposal content, not a live
-> listing. Nothing here should be published until the Foundation accepts the project and
-> confirms use of the OWASP name and marks. Items marked `[TBC]` are tracked in
+> listing. Nothing here should be published until the Foundation accepts the project page.
+> Use of the OWASP name and marks is confirmed. Items marked `[TBC]` are tracked in
 > [`../project/open-questions.md`](../project/open-questions.md) and must be resolved
 > before the page goes live.
 

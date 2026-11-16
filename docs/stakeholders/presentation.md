@@ -5,7 +5,7 @@
 **Deck:** `OWASP-Top-10-Pocket-Guide.pptx` (16 slides, 16:9)  
 **Companion document:** [`project-summary.md`](project-summary.md)
 
-> **Before presenting:** this is an independent draft. Say so early and say it plainly. Do not imply OWASP endorsement, and do not describe the content as reviewed.
+> **Before presenting:** this is a draft. Say so early and say it plainly. Do not describe the content as reviewed.
 
 ---
 
@@ -30,12 +30,12 @@
 > **OWASP Top 10 Pocket Guide**
 > Six editions. One offline reference.
 > Working draft · 22 October 2026
-> Independent project — not an OWASP publication
+> OWASP project
 
 **Speaker notes**
 
 - "Thank you for the time. I am going to show what exists today, how it is designed and built, and — importantly — what still stands between this and a release."
-- "Two framing points. First, this is a working title and an independent project. We are not claiming OWASP endorsement. Second, the content is a draft: written from the official material and fully cited, but not yet signed off by reviewers."
+- "Two framing points. First, this is OWASP Top 10 Pocket Guide, an OWASP project. Second, the content is a draft: written from the official material and fully cited, but not yet signed off by reviewers."
 - "I will keep the demo to a couple of minutes and leave time for decisions at the end."
 
 ---
@@ -131,7 +131,7 @@ Screenshot: navigation-dark with the five coloured tabs. Palette chips for OWASP
 - "The five tabs also have their own colour and their own hand-drawn glyph. That is a small thing that makes the app feel designed rather than assembled."
 - "All of this is generated from one seed colour and a luminance target, so light, dark and high-contrast variants stay consistent instead of being three hand-tuned themes."
 
-**Talking point if asked about the logo:** "The logo is a placeholder. We are using it at the project's direction while permission is confirmed; it is not a claim of affiliation."
+**Talking point if asked about the logo:** "The OWASP name and logo are used with permission for this project."
 
 ---
 
@@ -284,14 +284,14 @@ draft ──► final (all risks reviewed)
 | --- | --- |
 | Source code | GPL-3.0 |
 | Content (Web, API, LLM, Agentic Skills, Agentic Applications, MCP) | CC BY-SA 4.0, attribution kept in the bundle |
-| OWASP name and logo | Permission not yet confirmed — **blocker** |
-| Product name, package ID | Placeholders — **decision needed** |
+| OWASP name and logo | Permission confirmed |
+| Package ID | Placeholder — **decision needed** |
 
 **Speaker notes**
 
 - "The code is GPL-3.0 and all six content editions are CC BY-SA 4.0. The bundle stores the attribution text and the About screen shows it."
-- "One blocker: we have not asked OWASP about the name or the logo."
-- "I want to be direct: this is why the app says 'independent project' and 'not an OWASP publication'. If we cannot get permission, the fallback is a neutral name that refers to OWASP descriptively and no logo."
+- "The name and logo permission is confirmed; the remaining blocker is content review."
+- "The app is an OWASP project. The draft banner remains in place until the SME review is complete."
 
 ---
 
@@ -308,7 +308,7 @@ draft ──► final (all risks reviewed)
 
 **Speaker notes**
 
-- "The engineering is essentially complete. The remaining work is review, permissions and release mechanics."
+- "The engineering is essentially complete. The remaining work is review and release mechanics."
 - "The risk I would highlight is not technical. It is that the app looks finished, so someone distributes a profile build or a screenshot without the draft banner and the content is treated as reviewed advice. The draft gate is our main protection against that."
 - "The second risk is time: OWASP publishes new editions, and without an owner the content will age."
 
@@ -322,7 +322,7 @@ draft ──► final (all risks reviewed)
 >
 > Decisions needed today:
 > 1. Name reviewers for each edition
-> 2. Product name and package ID
+> 2. Package ID
 > 3. Branding route
 > 4. Distribution channel and signing owner
 > 5. Content refresh cadence and owner
@@ -348,8 +348,8 @@ draft ──► final (all risks reviewed)
 
 **Speaker notes**
 
-- "To summarise: the product works, the content is structured and traceable, and the remaining blockers are review and permissions rather than engineering."
-- "The one-sentence ask is: help us name reviewers and settle the name and branding, and we can move to a release candidate in about five weeks."
+- "To summarise: the product works, the content is structured and traceable, and the remaining blocker is review rather than engineering."
+- "The one-sentence ask is: help us name reviewers and settle the package ID and branding, and we can move to a release candidate in about five weeks."
 - "I am happy to take questions, and I can demo any screen."
 
 ---
@@ -357,7 +357,7 @@ draft ──► final (all risks reviewed)
 ## Questions to expect
 
 **"Is this an official OWASP app?"**  
-No. It is independent and not endorsed. The name and logo are placeholders pending permission. If permission is not granted, we rename and remove the mark.
+Yes. OWASP Top 10 Pocket Guide is an OWASP project, and use of the OWASP name and logo is confirmed. The content is still a draft pending SME review.
 
 **"How do we know the content is correct?"**  
 It is written from the official editions and cites them, but it has not been signed off. That is the purpose of the M1 review. The app is explicitly gated as draft until then.
@@ -389,4 +389,4 @@ The correction goes into the bundle, the validator and tests re-run, and the rev
 6. Open **Access**. Switch to dark, then back to light. Show text size and high contrast.
 7. Close on the five coloured tabs: "That is the whole product."
 
-**Do not** show the About screen unless asked — the placeholder naming is explained better in the deck than in a screenshot.
+**Do not** show the About screen unless asked — the naming and branding position is explained better in the deck than in a screenshot.

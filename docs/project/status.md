@@ -1,6 +1,6 @@
 # Project status
 
-**Status:** Draft — pre-release, not yet an official OWASP project.
+**Status:** Draft — pre-release, OWASP project.
 **Last updated:** 29 October 2026
 
 ## At a glance
@@ -61,7 +61,7 @@ Phase durations are estimates; dates follow once the blocking decisions are made
 A 1.0 release requires all of the following. Any missing gate keeps the bundle in draft.
 
 1. Every risk has named reviewers and a review date; bundle `status` is `final`.
-2. Product name, package ID and branding confirmed; OWASP permission recorded.
+2. Package ID and branding confirmed.
 3. Release keystore generated, held by the organisation, and used by a build that fails
    without it.
 4. Security assessment re-run against the final release build with no open High findings.
@@ -73,7 +73,6 @@ A 1.0 release requires all of the following. Any missing gate keeps the bundle i
 | Blocker | Affects |
 | --- | --- |
 | Code licence undecided | OWASP project page, `LICENSE`, distribution |
-| Name and OWASP marks unconfirmed | Project page, package ID, store listing |
 | No subject-matter reviewers yet | 60 risks, content final |
 | No signing key owner | Release candidate and any distribution |
 | No iOS build hardware or Apple account | M6 only |

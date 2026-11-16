@@ -56,7 +56,7 @@ class AboutScreen extends ConsumerWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'Top 10 Pocket Guide',
+                          'OWASP Top 10 Pocket Guide',
                           style: theme.textTheme.titleLarge,
                         ),
                         const SizedBox(height: 4),
@@ -85,7 +85,7 @@ class AboutScreen extends ConsumerWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: const SectionHeader(
-            title: 'Trademarks and affiliation',
+            title: 'Trademarks',
             icon: Icons.copyright_outlined,
           ),
         ),
@@ -93,11 +93,9 @@ class AboutScreen extends ConsumerWidget {
           padding: EdgeInsets.symmetric(horizontal: 16),
           child: Text(
             'OWASP® and the OWASP Top 10 are trademarks or registered '
-            'trademarks of the OWASP Foundation, Inc. This is an independent '
-            'project, not an OWASP publication or an endorsed product; final '
-            'affiliation, naming, and branding are pending confirmation by the '
-            'OWASP Foundation. Content is derived from OWASP materials under '
-            'the licenses listed below.',
+            'trademarks of the OWASP Foundation, Inc. The OWASP name and logo '
+            'are used with permission for this project. Content is derived '
+            'from OWASP materials under the licenses listed below.',
           ),
         ),
         Padding(

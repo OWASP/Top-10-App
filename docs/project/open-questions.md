@@ -18,9 +18,9 @@ names what it blocks, so the documents can be finished field by field.
 
 | ID | Question | Why it matters | Blocks | Owner | Status |
 | --- | --- | --- | --- | --- | --- |
-| N1 | Is "OWASP Top 10 Pocket Guide" acceptable, and does it require Foundation approval? | Uses the OWASP mark; a fallback neutral name is needed if not granted | Project page title, app label, store listing, repository name | Project leader + OWASP | Open |
+| N1 | Is "OWASP Top 10 Pocket Guide" acceptable, and does it require Foundation approval? | Uses the OWASP mark; a fallback neutral name is needed if not granted | Project page title, app label, store listing, repository name | Project leader + OWASP | Resolved — name confirmed |
 | N2 | Which reverse-DNS package ID replaces `com.example.top_10_app`? | Changing it later breaks upgrades and store identity | Release candidate and every build thereafter | Project leader | Open |
-| N3 | May the OWASP logo and launcher icon be used? | Currently a placeholder used at the project's direction | Store listing, app icon, About screen | OWASP | Open |
+| N3 | May the OWASP logo and launcher icon be used? | Use is confirmed for the project | Store listing, app icon, About screen | OWASP | Resolved — permission confirmed |
 
 ## OWASP process
 

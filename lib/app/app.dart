@@ -15,7 +15,7 @@ class Top10App extends ConsumerWidget {
         ref.watch(appSettingsProvider).value ?? const AppSettings();
 
     return MaterialApp.router(
-      title: 'Top 10 Pocket Guide',
+      title: 'OWASP Top 10 Pocket Guide',
       debugShowCheckedModeBanner: false,
       theme: buildAppTheme(
         brightness: Brightness.light,

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the stakeholder slide deck for the Top 10 Pocket Guide.
+"""Build the stakeholder slide deck for the OWASP Top 10 Pocket Guide.
 
 Run from anywhere:
 
@@ -482,7 +482,7 @@ class Deck:
             7.12,
             CONTENT_W - 1.0,
             0.18,
-            "OWASP Top 10 Pocket Guide  ·  Working draft  ·  Not an OWASP publication",
+            "OWASP Top 10 Pocket Guide  ·  Working draft  ·  OWASP project",
             size=7.5,
             color=MUTED,
         )
@@ -553,8 +553,8 @@ def slide_title(deck: Deck):
 
     chips = [
         ("WORKING DRAFT", 1.75, YELLOW, NAVY, True),
-        ("INDEPENDENT PROJECT", 2.35, BLUE_LIGHT, RGBColor.from_string("D7E2F2"), False),
-        ("NOT AN OWASP PUBLICATION", 2.95, BLUE_LIGHT, RGBColor.from_string("D7E2F2"), False),
+        ("OWASP PROJECT", 2.35, BLUE_LIGHT, RGBColor.from_string("D7E2F2"), False),
+        ("SME REVIEW PENDING", 2.95, BLUE_LIGHT, RGBColor.from_string("D7E2F2"), False),
     ]
     x = 0.85
     for label, w, edge, text_color, filled in chips:
@@ -572,8 +572,8 @@ def slide_title(deck: Deck):
     )
     deck.note(
         s,
-        "Say early and plainly: working title, independent project, not an OWASP "
-        "publication, and the content is a draft pending SME review. Then set the "
+        "Say early and plainly: this is OWASP Top 10 Pocket Guide, an OWASP "
+        "project, and the content is a draft pending SME review. Then set the "
         "agenda: what exists, how it is designed and built, and the decisions needed.",
     )
 
@@ -1193,21 +1193,21 @@ def slide_quality(deck: Deck):
 def slide_licensing(deck: Deck):
     s = deck.slide(
         "Licensing and branding",
-        "Open content, with one blocker",
-        "The code and content licences are settled. The marks are not.",
+        "Open content, marks confirmed",
+        "The code and content licences and the OWASP marks are settled.",
     )
     rows = [
         ["Asset", "Position", "Status"],
         ["Source code", "GPL-3.0; licence file in the repository", "Cleared"],
         ["Web, API, LLM, Agentic Skills, Agentic Applications and MCP content", "CC BY-SA 4.0; attribution stored per edition", "Cleared"],
-        ["OWASP name and logo", "Permission not requested; used as a placeholder", "BLOCKER"],
-        ["Product name and package ID", "Working title; com.example.top_10_app", "DECISION"],
+        ["OWASP name and logo", "Permission confirmed", "CLEARED"],
+        ["Package ID", "com.example.top_10_app is a placeholder", "DECISION"],
     ]
     styled = [rows[0]]
     status_colors = [
         (GREEN, GREEN_BG),
         (GREEN, GREEN_BG),
-        (RED, RED_BG),
+        (GREEN, GREEN_BG),
         (AMBER, AMBER_BG),
     ]
     for row, (fg, bg) in zip(rows[1:], status_colors):
@@ -1229,23 +1229,22 @@ def slide_licensing(deck: Deck):
     )
     add_text(
         s, MARGIN + 0.24, 5.74, CONTENT_W - 0.48, 0.82,
-        "Attribution is stored with the content and shown on the About screen. No OWASP "
-        "endorsement is claimed anywhere in the app. If permission is not granted, the "
-        "fallback is a neutral name with no logo.",
+        "Attribution is stored with the content and shown on the About screen. The "
+        "OWASP name and logo are used with permission for this project.",
         size=11, color=STEEL, line_spacing=1.12,
     )
     deck.note(
         s,
-        "The code is GPL-3.0 and all six content editions are CC BY-SA 4.0. One "
-        "blocker: we have not asked OWASP about the name or the logo. Say plainly "
-        "that the app disclaims endorsement.",
+        "The code is GPL-3.0 and all six content editions are CC BY-SA 4.0. The "
+        "name and logo permission is confirmed. The remaining blocker is content "
+        "review.",
     )
 
 
 def slide_status(deck: Deck):
     s = deck.slide(
         "Status",
-        "Engineering is done; review and permissions are not",
+        "Engineering is done; review is not",
         "What is built, what is draft, what is blocked and what has not started.",
     )
     quads = [
@@ -1262,7 +1261,6 @@ def slide_status(deck: Deck):
             "Release builds refuse the bundle",
         ]),
         ("BLOCKED", RED, RED_BG, [
-            "OWASP name and logo permission",
             "Release keystore and signing owner",
         ]),
         ("NOT STARTED", STEEL, WASH, [
@@ -1286,8 +1284,8 @@ def slide_status(deck: Deck):
             yy += 0.38
     deck.note(
         s,
-        "Engineering is essentially complete. The remaining work is review, "
-        "permissions and release mechanics. The main product risk is that a polished "
+        "Engineering is essentially complete. The remaining work is review and "
+        "release mechanics. The main product risk is that a polished "
         "draft gets treated as reviewed advice, which is what the draft gate prevents.",
     )
 
@@ -1296,7 +1294,7 @@ def slide_roadmap(deck: Deck):
     s = deck.slide(
         "Plan and decisions",
         "A release candidate in about five weeks",
-        "The schedule is dominated by review and permissions, not by code.",
+        "The schedule is dominated by review, not by code.",
     )
     milestones = [
         ("M1", "Review", "2 weeks"),
@@ -1318,8 +1316,8 @@ def slide_roadmap(deck: Deck):
              "DECISIONS REQUESTED TODAY", size=8.5, bold=True, color=MUTED)
     decisions = [
         ("1", "Name reviewers", "At least one practitioner and one editor per edition."),
-        ("2", "Fix name and package ID", "Changing the app ID after release breaks upgrades."),
-        ("3", "Choose the branding route", "Seek permission for name and logo, or go neutral."),
+        ("2", "Fix the package ID", "Changing the app ID after release breaks upgrades."),
+        ("3", "Confirm the branding route", "Permission recorded; confirm store and About wording."),
         ("4", "Pick distribution and signer", "Play internal testing first; organisation-owned keystore."),
         ("5", "Set a refresh cadence", "Review on each new OWASP edition and twice a year."),
     ]
@@ -1336,8 +1334,8 @@ def slide_roadmap(deck: Deck):
         add_text(s, x + 0.42, yy + 0.23, 4.9, 0.3, body, size=9.5, color=STEEL)
     deck.note(
         s,
-        "If reviewers are named today, M1 starts this week. Decide the name and "
-        "package ID before any external build.",
+        "If reviewers are named today, M1 starts this week. Decide the package ID "
+        "before any external build.",
     )
 
 
@@ -1363,13 +1361,13 @@ def slide_close(deck: Deck):
     add_rect(s, 0.87, 3.62, 1.15, 0.07, fill=YELLOW)
     add_text(
         s, 0.85, 3.86, 9.6, 0.34,
-        "What we need: reviewers, a name, a branding route.",
+        "What we need: reviewers, a package ID, a branding route.",
         size=15, color=RGBColor.from_string("C9D6EA"),
     )
 
     asks = [
         ("Reviewers", "Named per edition, two-week window"),
-        ("Identity", "Product name, package ID, branding route"),
+        ("Identity", "Package ID and branding route"),
         ("Distribution", "Play testing first; organisation-owned signing key"),
     ]
     x = 0.85
@@ -1386,13 +1384,13 @@ def slide_close(deck: Deck):
     add_text(s, 0.85, 6.55, 11.0, 0.4, "Thank you  ·  questions and demo", size=13,
              color=RGBColor.from_string("A9BEDD"))
     add_text(s, 0.85, 6.92, 11.0, 0.24,
-             "Working draft  ·  independent project  ·  not an OWASP publication",
+             "Working draft  ·  OWASP project",
              size=8, color=RGBColor.from_string("7E97BB"))
     deck.note(
         s,
-        "Close on the ask: reviewers, a name, a branding route and a signing route. "
-        "Offer the demo and leave time for questions. Repeat the disclaimer once more "
-        "so nobody leaves thinking this is an OWASP release.",
+        "Close on the ask: reviewers, a package ID, a branding route and a signing route. "
+        "Offer the demo and leave time for questions. Repeat the status once more so "
+        "nobody leaves thinking the content has been reviewed.",
     )
 
 

@@ -4,9 +4,9 @@
 
 **Prepared:** 22 October 2026  
 **Status:** Working draft. Content is not yet reviewed and the app is not ready for public release.  
-**Working title:** Top 10 Pocket Guide (application ID `com.example.top_10_app` is a placeholder).
+**Name:** OWASP Top 10 Pocket Guide (the application ID `com.example.top_10_app` is a placeholder).
 
-> **Independence:** This is an independent project. It is not published, sponsored or endorsed by the OWASP Foundation. Use of the OWASP name, logo and other marks is pending confirmation.
+> **OWASP project:** The Pocket Guide is an OWASP project. Use of the OWASP name, logo and other marks is confirmed. The content remains a draft until SME review.
 
 ---
 
@@ -14,9 +14,9 @@
 
 The Pocket Guide is a single Android app that puts six OWASP Top 10 editions in one offline, searchable reference: Web (2025), API Security (2023), LLM Applications (2026), Agentic Skills (2026), Agentic Applications (2026) and MCP (2025). Each risk is presented as a short summary, a real-world example, vulnerable and secure code, how to test for it, how to fix it, and the official citation with its source URL. Five questions per list and thirteen condensed cheatsheets turn reading into practice.
 
-The product is functionally complete and has been exercised on an emulator and on a physical Samsung phone. Its content, however, is still a **draft**: none of the 60 risk entries has been signed off by a subject-matter expert (SME), and the product name, package ID and OWASP branding are unresolved. Engineering has deliberately made these blockers impossible to ship past: a release build refuses to display draft content.
+The product is functionally complete and has been exercised on an emulator and on a physical Samsung phone. Its content, however, is still a **draft**: none of the 60 risk entries has been signed off by a subject-matter expert (SME), and the package ID remains unresolved. Engineering has deliberately made these blockers impossible to ship past: a release build refuses to display draft content.
 
-**What we are asking for:** approval of the review plan and named reviewers, and a decision on naming and branding. Details are in [Decisions requested](#9-decisions-requested).
+**What we are asking for:** approval of the review plan and named reviewers, and a decision on the package ID. Details are in [Decisions requested](#9-decisions-requested).
 
 ---
 
@@ -129,8 +129,8 @@ This is intentional. It makes it impossible to ship unreviewed security advice b
 | # | Item | Impact if unresolved | Current position |
 | --- | --- | --- | --- |
 | R1 | No SME sign-off on 60 risks | Content cannot be promoted to final; no release build | Review packet ready in `docs/sme-review/`; reviewers not yet named |
-| R2 | OWASP name and logo permission | Branding and store listing could be challenged | Not requested yet; treated as a placeholder |
-| R3 | Product name and package ID are placeholders | Changing `com.example.top_10_app` later breaks upgrades and store identity | Decide before any public build |
+| R2 | OWASP name and logo permission | Branding and store listing could be challenged | Confirmed |
+| R3 | Package ID is a placeholder | Changing `com.example.top_10_app` later breaks upgrades and store identity | Decide before any public build |
 | R4 | Release signing uses the Android debug key | Build cannot be distributed through a store | Needs a release keystore and an owner |
 | R5 | LLM 2026 citations point to the edition landing page | Reviewers cannot check page-level references on the web yet | Category pages not yet published by OWASP; page ranges from the official PDF are cited |
 | R6 | Content ages as OWASP publishes new editions | App becomes misleading over time | Propose a named content owner and a twice-yearly review |
@@ -140,8 +140,8 @@ This is intentional. It makes it impossible to ship unreviewed security advice b
 ## 7. Decisions requested
 
 1. **Approve the SME review plan and name reviewers.** At least one reviewer per edition, ideally one practitioner and one editor. Target: two weeks from approval.
-2. **Confirm the product name and package ID.** Recommendation: decide before the first external build; a neutral name avoids implying OWASP authorship.
-3. **Confirm the branding route.** Either seek permission for the current name and logo, or switch to a clearly unofficial name that references OWASP descriptively.
+2. **Confirm the package ID.** Recommendation: decide before the first external build; changing it later breaks upgrades and store identity.
+3. **Confirm the branding route.** Permission for the OWASP name and logo is confirmed; confirm the store-listing and About-screen wording.
 4. **Choose the distribution path and signing owner.** Recommendation: Play Store internal testing first, then production; direct APK only for controlled pilots.
 5. **Approve a content refresh cadence and owner.** Recommendation: review on every new OWASP edition and at least twice a year.
 
@@ -157,7 +157,7 @@ This is intentional. It makes it impossible to ship unreviewed security advice b
 | M4 — Pilot | Internal testing with a small group; fix findings | 2–4 weeks |
 | M5 — Public release | Store listing or approved distribution channel | After M4 sign-off |
 
-The engineering work for M3 is small; the schedule is dominated by review and by the branding/licensing decisions in section 7.
+The engineering work for M3 is small; the schedule is dominated by review and the remaining package-ID and licensing decisions in section 7.
 
 ---
 
@@ -166,7 +166,6 @@ The engineering work for M3 is small; the schedule is dominated by review and by
 - No user accounts, cloud sync or social features.
 - No analytics, advertising or telemetry.
 - No network access of any kind.
-- No claim of OWASP affiliation or endorsement.
 - Not a substitute for the official OWASP documents; the app cites them and shows their URLs, and should be used alongside them.
 - Only Android is built today. The Flutter codebase can target iOS, but that has not been attempted or tested.
 
