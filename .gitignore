@@ -26,8 +26,12 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Local research notes (not part of the app or docs)
+# Local agent instructions and research notes (not part of the app or docs)
+/CLAUDE.md
 /owasp-top-10-all.md
+
+# Generated stakeholder deliverable (rebuild with docs/stakeholders/build_deck.py)
+/docs/stakeholders/*.pptx
 
 # IDE and OS metadata
 .idea/
