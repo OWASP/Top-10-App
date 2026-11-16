@@ -2,14 +2,14 @@
 
 Three leadership roles are defined below: the project leader and two co-leaders.
 
-| Role | Name | Affiliation |
-| --- | --- | --- |
-| Project leader | Bo Kaung | bo.kaung@owasp.org |
-| Co-leader — content and review | Maryam Tehrani | maryam.tehrani@owasp.org |
-| Co-leader — engineering and release | Marc Daniel Sevigny | marc.sevigny@owasp.org |
+| Role | Name |
+| --- | --- |
+| Project leader | Bo Kaung |
+| Co-leader — content and review | Maryam Tehrani |
+| Co-leader — engineering and release | Marc Daniel Sevigny |
 
-> Confirm what may be published on the public project page; prefer a GitHub handle or
-> project-page link over a personal email address.
+> Add GitHub handles or a project-page link once confirmed. Do not publish personal
+> email addresses.
 
 ## Responsibilities
 
@@ -54,7 +54,7 @@ Three leadership roles are defined below: the project leader and two co-leaders.
 
 ## Before publishing this file
 
-- [ ] Confirm the three names and contact details.
+- [ ] Confirm the three names.
 - [ ] Confirm that all three are willing to be listed publicly.
 - [ ] Check the Foundation's current leader requirements at application time.
 - [ ] Decide the public contact route (GitHub Discussions, a mailing list or an OWASP
