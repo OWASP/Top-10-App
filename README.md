@@ -1,4 +1,8 @@
-# OWASP Top 10 Pocket Guide (working title)
+<p align="center">
+  <img src="assets/images/owasp_logo.png" alt="OWASP logo" width="60">
+</p>
+
+# OWASP Top 10 Pocket Guide
 
 Offline study guide for six OWASP Top 10 lists: Web (2025), API Security (2023), LLM
 Applications (2026), Agentic Skills (2026), Agentic Applications (2026) and MCP (2025).
@@ -8,8 +12,59 @@ Android phone is implemented and tested. Android tablet layouts and iOS are on t
 after the first release; the codebase is Flutter, so iOS is a port rather than a rewrite.
 
 > **Status: draft.** All 60 risks are awaiting SME review and the bundle is
-> gated as draft in the UI. Official product name, application ID and OWASP
-> affiliation wording are still pending confirmation.
+> gated as draft in the UI. The application ID is still pending confirmation.
+
+## Why this app exists
+
+OWASP publishes its guidance as six separate Top 10 lists. In an incident, a design
+review or a client visit, finding the right risk usually means juggling PDFs, and
+copying notes often loses the citation. The Pocket Guide puts all six editions in one
+offline app and keeps every claim traceable to the OWASP edition it came from. It is a
+route into the source material, not a replacement for it.
+
+The app is built with four things in mind:
+
+- **Security.** Release builds declare no network permission and contain no accounts,
+  WebView, dynamic code loading or telemetry SDKs. The security assessment found no open
+  High findings, dependency scans found no known advisories, and release builds fail
+  closed until a real signing key is configured. The content loader validates the bundle
+  at startup; draft content is visibly marked and a release build refuses to show
+  unreviewed content.
+- **Privacy.** There are no accounts, analytics, advertising or telemetry, and no server
+  to send data to. Read state, bookmarks, quiz results and settings stay in a local
+  database on the device, and Android backup is disabled.
+- **Simplicity.** One validated content bundle feeds the app, the test suite and the SME
+  review packet. Every risk uses the same structure — summary, real-world example,
+  vulnerable and secure code, how to test, how to fix and the official citation — and the
+  six editions are never blended.
+- **Accessibility.** TalkBack was verified on a device, WCAG 2.2 AA contrast is asserted by
+  tests, layouts are checked at 200% text and touch targets meet 48 dp. The app also
+  offers three text sizes that combine with the system font scale, high contrast, readable
+  spacing and reduced motion; settings are saved locally.
+
+Full scope, evidence and accepted risks are in
+[`docs/security/security-test-report.md`](docs/security/security-test-report.md).
+
+## Screenshots
+
+| Learn | Practice | Cheatsheets | Progress | Access |
+| --- | --- | --- | --- | --- |
+| <a href="docs/stakeholders/screenshots/learn-light.png"><img src="docs/stakeholders/screenshots/learn-light.png" alt="Learn screen: six OWASP Top 10 list filters, read progress and risk cards" width="150"></a> | <a href="docs/stakeholders/screenshots/practice-light.png"><img src="docs/stakeholders/screenshots/practice-light.png" alt="Practice screen: a quiz question with answer choices" width="150"></a> | <a href="docs/stakeholders/screenshots/sheets-light.png"><img src="docs/stakeholders/screenshots/sheets-light.png" alt="Cheatsheets screen: condensed guidance per edition" width="150"></a> | <a href="docs/stakeholders/screenshots/progress-light.png"><img src="docs/stakeholders/screenshots/progress-light.png" alt="Progress screen: risks read, bookmarks and quiz history" width="150"></a> | <a href="docs/stakeholders/screenshots/access-light.png"><img src="docs/stakeholders/screenshots/access-light.png" alt="Access screen: theme, text size, contrast and motion settings" width="150"></a> |
+
+*Captured from the draft build in light theme; click any screen to open the
+full-size image. The draft banner is intentional at this stage. Risk-detail and
+dark-theme screenshots are in [`docs/stakeholders/screenshots/`](docs/stakeholders/screenshots/).*
+
+## Leadership
+
+| Role | Leader |
+| --- | --- |
+| Project leader | Bo Kaung |
+| Co-leader — content and review | Maryam Tehrani |
+| Co-leader — engineering and release | Marc Daniel Sevigny |
+
+Responsibilities, decision rules and the pre-publication checklist are in
+[`docs/project/leaders.md`](docs/project/leaders.md).
 
 ## Features
 
